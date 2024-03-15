@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appartment</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap-grid.min.css"
+    />
+    <link rel="stylesheet" href="./libs/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body class="header-bg">
+    <div class="wrapper">
+      <header class="header">
+        <h1 class="header__title">Онлайн букинг</h1>
+        <h2 class="header__subtitle">Дома и апартаменты города Сочи</h2>
+      </header>
+
+      <!-- КНОПКА Админ Панели -->
+      <div class="admin-button-wrapper">
+        <a href="#" class="admin-button">
+          <img
+            class="admin-button__img"
+            src="./img/icons/icon-locked-padlock.svg"
+            alt="icon-locked"
+          />
+          Админ панель
+        </a>
+      </div>
+      <!--// КНОПКА Админ Панели -->
+
+      <main
+        class="content-wrapper content-wrapper--rounded content-wrapper--shadow"
+      >
+        <!-- Single-wrapper -->
+        <div class="single-wrapper">
+          <!-- Single -->
+          <div class="single">
+            <div class="single__info">Дом целиком</div>
+
+            <div class="single__title">Резиденция с видом на море</div>
+
+            <div class="single-tag-wrapper">
+              <div class="single__tag">4 гостя</div>
+              <div class="single__tag">2 спальни</div>
+              <div class="single__tag">2 кровати</div>
+              <div class="single__tag">1 ванная</div>
+            </div>
+
+            <div class="single__price"><b>4 202 руб.</b> за сутки</div>
+
+            <div class="single__button" id="btn-open-form">
+              <button class="button" type="submit">Забронировать</button>
+            </div>
+
+            <div class="single__form-wrapper none" id="form">
+              <form action="submit" class="single__form">
+                <h3 class="form__title">Бронировать размещение</h3>
+                <input
+                  class="form__input"
+                  type="text"
+                  id=""
+                  placeholder="Фамилия Имя"
+                  required
+                />
+                <input
+                  class="form__input"
+                  type="email"
+                  id=""
+                  placeholder="Email"
+                  required
+                />
+                <input
+                  class="form__input"
+                  type="tel"
+                  id="tel"
+                  placeholder="Телефон"
+                  required
+                />
+                <div class="form__button">
+                  <button class="button" type="submit">Забронировать</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="single__description">
+              <p>
+                Место для тех, кто устал от городской среды: уединенное,
+                комфортабельное жилье для двоих.
+              </p>
+              <p>
+                Апартаменты 70 кв. м. занимают верхний этаж, имеют свою
+                парковку, отдельный вход и большую террасу.
+              </p>
+              <p>
+                Высокий комфорт:кондиционер, оснащенная кухня, хорошая большая и
+                удобная кровать, просторная душевая комната, подогреваемые
+                теплые полы, водоподготовка и многое другое.
+              </p>
+            </div>
+          </div>
+          <!--// Single -->
+
+          <!-- gallery -->
+          <div class="gallery">
+            <div class="gallery__big">
+              <!-- 1 IMG -->
+              <a
+                data-fancybox="gallery"
+                href="./img/cards/big/big-1.webp"
+                class="gallery__big"
+              >
+                <img src="./img/cards/mini/mini-1.jpg" alt="mini-1" />
+              </a>
+              <!--// 1 IMG -->
+            </div>
+            <div class="gallery__mini-wrapper">
+              <div class="gallery__mini">
+                <!-- 2 IMG -->
+                <a
+                  data-fancybox="gallery"
+                  href="./img/cards/big/big-2.webp"
+                  class="gallery__mini"
+                >
+                  <img src="./img/cards/mini/mini-2.jpg" alt="mini-2" />
+                </a>
+                <!--// 2 IMG -->
+
+                <!-- 3 IMG -->
+                <a
+                  data-fancybox="gallery"
+                  href="./img/cards/big/big-3.webp"
+                  class="gallery__mini"
+                >
+                  <img src="./img/cards/mini/mini-3.jpg" alt="mini-3" />
+                </a>
+              </div>
+              <!--// 3 IMG -->
+
+              <!-- 4 IMG -->
+              <a
+                data-fancybox="gallery"
+                href="./img/cards/big/big-4.webp"
+                class="gallery__mini"
+              >
+                <img src="./img/cards/mini/mini-4.jpg" alt="mini-4" />
+              </a>
+              <!--// 4 IMG -->
+            </div>
+          </div>
+          <!--// gallery -->
+        </div>
+        <!--// Single-wrapper -->
+      </main>
+
+      <aside class="related">
+        <div class="content-wrapper content-wrapper--rounded">
+          <h3 class="related__title">Похожие варианты размещения</h3>
+          <div class="related__row">
+            <!-- Карточка 4 -->
+            <div class="col-md-4">
+              <div class="appartament-card">
+                <a href="appartment.html" class="appartament-card__link">
+                  <div class="appartament-card__img">
+                    <img src="./img/preview/preview-4.jpg" alt="preview-4 " />
+                  </div>
+
+                  <div class="appartament-card__description">
+                    Дом целиком • 2 кровати • 3 гостя
+                  </div>
+
+                  <h3 class="appartament-card__title">
+                    Квартира-студия у моря
+                  </h3>
+
+                  <div class="appartament-card__price">4 202 руб. за сутки</div>
+                </a>
+              </div>
+            </div>
+            <!-- // Карточка 4  -->
+
+            <!-- Карточка 5 -->
+            <div class="col-md-4">
+              <div class="appartament-card">
+                <a href="appartment.html" class="appartament-card__link">
+                  <div class="appartament-card__img">
+                    <img src="./img/preview/preview-5.jpg" alt="preview-5 " />
+                  </div>
+
+                  <div class="appartament-card__description">
+                    Квартира • 2 кровати • 4 гостя
+                  </div>
+
+                  <h3 class="appartament-card__title">
+                    Уютная и тихая квартира
+                  </h3>
+
+                  <div class="appartament-card__price">1 300 руб. за сутки</div>
+                </a>
+              </div>
+            </div>
+            <!-- // Карточка 5  -->
+
+            <!-- Карточка 6 -->
+            <div class="col-md-4">
+              <div class="appartament-card">
+                <a href="appartment.html" class="appartament-card__link">
+                  <div class="appartament-card__img">
+                    <img src="./img/preview/preview-6.jpg" alt="preview-6 " />
+                  </div>
+
+                  <div class="appartament-card__description">
+                    Дом целиком • 2 кровати • 4 гостя
+                  </div>
+
+                  <h3 class="appartament-card__title">
+                    Апартаменты в центре Хосты
+                  </h3>
+
+                  <div class="appartament-card__price">4 202 руб. за сутки</div>
+                </a>
+              </div>
+            </div>
+            <!-- // Карточка 6  -->
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__copyright">
+          &#169; 2024 Учебный проект Букинг, выполнил
+          <a href="#">Иван Попов</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./libs/jquery-3.7.1.min.js"></script>
+    <script
+      src="./libs/jquery-maskedinput/jquery.maskedinput.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="./libs/fancybox/fancybox.umd.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
